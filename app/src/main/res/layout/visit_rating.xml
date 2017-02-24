@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:text="Tell us how did you like this visit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabelReview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLabelReview"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/evaluation"
+            android:id="@+id/imageView"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false"
+            android:cropToPadding="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbVisit"
+            android:layout_marginTop="20dp"
+            app:srb_starSize="42dp"
+            app:srb_rating="3"
+            app:srb_numberOfStars="5"
+            app:srb_stepSize="1"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
